@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Instagram Portal",
+    "version": "1.0",
+    "description": "Basic Extention that allows you to view photos that were sent to you by other users. Thing about is that sender won't know that you opened the photo!",
+    "permissions": ["tabs", "activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["https://www.instagram.com/direct/inbox/"],
+        "js": ["script.js"]
+      }
+    ]
+  }
+  
